@@ -11,4 +11,4 @@ function blablabla(filename) {
 	return data;
 }
 
-console.log(blablabla('data/input0.txt'));
+console.log(blablabla('../data/input0.txt'));
