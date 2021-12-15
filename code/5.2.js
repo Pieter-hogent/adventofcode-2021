@@ -1,4 +1,12 @@
 // https://dodona.ugent.be/en/courses/961/series/10678/activities/1373018759/
+
+// ====================
+// 		FAILS ON DODONA
+// --------------------
+// no idea why, everything is fine, and gives correct results when ran locally
+// so hard to debug the problem
+//
+
 const fs = require('fs');
 const { resolve } = require('path');
 
