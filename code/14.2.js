@@ -56,15 +56,13 @@ function polymerize(filename) {
 	}
 
 	let countEl = Object.entries(polyPairs).reduce((split, [pair, amount]) => {
-		let [a, b] = pair.split('');
+		let [a, _] = pair.split('');
 		split[a] = split[a] ? split[a] + amount : amount; // only count the first
 		return split;
 	}, {});
 	countEl[lastLetter]++;
 
-	let count = Object.values(countEl)
-		// .map((x) => x / 2)
-		.sort((a, b) => b - a);
+	let count = Object.values(countEl).sort((a, b) => b - a);
 	return count[0] - count[count.length - 1];
 }
 
